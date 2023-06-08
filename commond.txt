@@ -1,0 +1,1 @@
+CacheSim.exe -c config.txt -t ls.trace -o ls.trace.out
