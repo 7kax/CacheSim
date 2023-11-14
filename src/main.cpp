@@ -1,15 +1,12 @@
-#include <iostream>
-#include "Config.h"
-#include "IO.h"
-#include "general.h"
+#include "objects.h"
 using namespace std;
 
-int main(int argc, char *argv[])
-{
-    IO::iManager.initIO(argc, argv);
-    general::TOP.initGeneral();
-    general::TOP.run();
-    general::TOP.showInfo();
+int main(int argc, char *argv[]) {
+    using namespace CacheSim;
+    iManager.initIO(argc, argv);
+    TOP.initGeneral();
+    TOP.run();
+    TOP.showInfo();
 
     return 0;
 }

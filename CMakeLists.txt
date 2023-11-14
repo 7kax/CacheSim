@@ -6,6 +6,9 @@ project (${PROJECT_NAME})
 # 标准: C++17及以上
 set (CMAKE_CXX_STANDARD 17)
 
+# 设置输出文件目录
+set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/build)
+
 # 获取所有源文件
 aux_source_directory(src SRC_DIR)
 

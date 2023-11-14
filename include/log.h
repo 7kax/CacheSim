@@ -1,18 +1,15 @@
 #pragma once
-#include <string>
 #include <fstream>
+#include <string>
 
-namespace logger
-{
-    class logger
-    {
-    private:
-        std::ofstream ofs;
+namespace CacheSim {
+class logger {
+  private:
+    std::ofstream ofs;
 
-    public:
-        logger();
-        void log(std::string str);
-        ~logger();
-    };
-    extern logger mLogger;
-}
+  public:
+    logger();
+    void log(std::string str);
+    ~logger();
+};
+} // namespace CacheSim

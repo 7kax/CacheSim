@@ -1,23 +1,12 @@
-#include "log.h"
-#include <fstream>
+#include "objects.h"
 using namespace std;
 
-namespace logger
-{
-    logger mLogger{};
+namespace CacheSim {
+logger mLogger{};
 
-    logger::logger()
-    {
-        ofs.open("../log.txt");
-    }
+logger::logger() { ofs.open("../log.txt"); }
 
-    void logger::log(string str)
-    {
-        ofs << str << endl;
-    }
+void logger::log(string str) { ofs << str << endl; }
 
-    logger::~logger()
-    {
-        ofs.close();
-    }
-}
+logger::~logger() { ofs.close(); }
+} // namespace CacheSim
